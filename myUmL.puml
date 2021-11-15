@@ -1,0 +1,17 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+
+interface Elevator
+interface CallForElevator
+interface Building
+interface AlgoElevator
+class AlgoElevator1
+
+Building --|> Elevator
+Building --|> CallForElevator
+Elevator --|> AlgoElevator
+AlgoElevator --|> AlgoElevator1
+
+
+@enduml
