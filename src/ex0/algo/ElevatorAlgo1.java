@@ -14,12 +14,12 @@ import java.util.*;
  */
 public class ElevatorAlgo1 implements ElevatorAlgo {
     public static final int UP = 1, DOWN = -1;
-    Building _building;
-    int elevNum;
-    Vector<Integer>[] floorVector;
-    PriorityQueue<Integer>[] pqUp;
-    PriorityQueue<Integer>[] pqDown;
-    int[] elevDir;
+    private final Building _building;
+    private final int elevNum;
+    private final Vector<Integer>[] floorVector;
+    private final PriorityQueue[] pqUp;
+    private final PriorityQueue[] pqDown;
+    private final int[] elevDir;
 
 
     @Override
